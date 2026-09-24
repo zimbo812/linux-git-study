@@ -27,3 +27,4 @@
 * [Офіційна книга Pro Git (українською)](https://git-scm.com/book/uk/v2)
 * [Learn Git Branching — візуальний інтерактивний тренажер](https://learngitbranching.js.org/)
 * [GitHub Documentation](https://docs.github.com/en)
+* [Google Gemini Flash 3.8](gemini.google.com)
