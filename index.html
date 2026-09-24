@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опрацювання теми: Операційна система GNU/Linux</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0284c7;
+            --code-bg: #090d16;
+            --border-color: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        h1 {
+            color: var(--accent);
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            color: var(--accent);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--accent);
+            padding-left: 0.75rem;
+        }
+
+        section {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+        }
+
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+        }
+
+        code {
+            font-family: "Fira Code", "Courier New", Courier, monospace;
+            background-color: var(--code-bg);
+            color: #f43f5e;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        pre {
+            background-color: var(--code-bg);
+            border: 1px solid var(--border-color);
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin-top: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        pre code {
+            color: #34d399;
+            background: none;
+            padding: 0;
+            font-size: 0.95rem;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Опрацювання теми: Операційна система GNU/Linux</h1>
+        <p>Практична робота з вивчення базових принципів, дистрибутивів, CLI та скриптингу Bash</p>
+    </header>
+
+    <!-- 1. Коротка інформація про ОС GNU/Linux -->
+    <section>
+        <h2>1. Коротка інформація про ОС GNU/Linux</h2>
+        <p>
+            <strong>GNU/Linux</strong> — це вільна Unix-подібна операційна система, побудована на базі ядра <strong>Linux</strong>, створеного Лінусом Торвальдсом у 1991 році, та системних утиліт проєкту <strong>GNU</strong>, започаткованого Річардом Столманом у 1983 році.
+        </p>
+        <p style="margin-top: 0.75rem;">
+            Основними перевагами системи є відкритий вихідний код (Open Source), висока стабільність, модульність, безпека та гнучкість конфігурації. Сьогодні GNU/Linux домінує в сегменті серверів, хмарних обчислень, суперкомп'ютерів (100% топ-500) та вбудованих систем (включаючи платформу Android).
+        </p>
+    </section>
+
+    <!-- 2. Перелік найбільш популярних дистрибутивів -->
+    <section>
+        <h2>2. Популярні дистрибутиви Linux</h2>
+        <p>Дистрибутив Linux складається з ядра Linux, утиліт GNU, системи керування пакунками та графічного або консольного середовища. Серед найбільш відомих:</p>
+        <ul>
+            <li><strong>Ubuntu</strong> — найпопулярніший дистрибутив для домашніх ПК та хмарних рішень, створений на базі Debian компанією Canonical.</li>
+            <li><strong>Debian</strong> — один із найстаріших дистрибутивів, відомий бездоганною стабільністю та суворою політикою щодо вільного ПЗ.</li>
+            <li><strong>Fedora</strong> — передовий дистрибутив від спільноти, спонсорований компанією Red Hat; тестовий майданчик для нових технологій перед впровадженням у RHEL.</li>
+            <li><strong>Arch Linux</strong> — мінімалістичний та легкий дистрибутив, заснований на моделі «rolling release» та філософії DIY (Do It Yourself).</li>
+            <li><strong>Linux Mint</strong> — зручна система для початківців, орієнтована на комфортну роботу з мультимедіа та звичний класичний десктопний інтерфейс (Cinnamon).</li>
+        </ul>
+    </section>
+
+    <!-- 3. Приклади команд роботи в Linux CLI -->
+    <section>
+        <h2>3. Робота в Linux CLI: Базові команди</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Команда</th>
+                    <th>Опис призначення</th>
+                    <th>Приклад використання</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>pwd</code></td>
+                    <td>Виводить шлях поточної робочої директорії (print working directory)</td>
+                    <td><code>pwd</code></td>
+                </tr>
+                <tr>
+                    <td><code>echo</code></td>
+                    <td>Виводить переданий рядок тексту на екран або перенаправляє у файл</td>
+                    <td><code>echo "Hello World"</code></td>
+                </tr>
+                <tr>
+                    <td><code>ls</code></td>
+                    <td>Відображає вміст поточної або вказаної директорії</td>
+                    <td><code>ls -la /home</code></td>
+                </tr>
+                <tr>
+                    <td><code>cd</code></td>
+                    <td>Змінює поточну робочу директорію (change directory)</td>
+                    <td><code>cd /var/log</code></td>
+                </tr>
+                <tr>
+                    <td><code>touch</code></td>
+                    <td>Створює порожній файл або оновлює мітку часу існуючого</td>
+                    <td><code>touch script.sh</code></td>
+                </tr>
+                <tr>
+                    <td><code>mkdir</code></td>
+                    <td>Створює нову папку/каталог (make directory)</td>
+                    <td><code>mkdir -p projects/lab1</code></td>
+                </tr>
+                <tr>
+                    <td><code>cp</code></td>
+                    <td>Копіює файли або директорії (з прапорцем <code>-r</code>)</td>
+                    <td><code>cp source.txt backup.txt</code></td>
+                </tr>
+                <tr>
+                    <td><code>mv</code></td>
+                    <td>Переміщує або перейменовує файл чи папку</td>
+                    <td><code>mv old_name.txt new_name.txt</code></td>
+                </tr>
+                <tr>
+                    <td><code>rm</code></td>
+                    <td>Видаляє файли (або папки з прапорцем <code>-rf</code>)</td>
+                    <td><code>rm unnecessary_file.log</code></td>
+                </tr>
+                <tr>
+                    <td><code>history</code></td>
+                    <td>Виводить історію раніше виконаних команд у поточному терміналі</td>
+                    <td><code>history | tail -n 10</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- 4. BASH-скрипт авторизації -->
+    <section>
+        <h2>4. BASH-скрипт імітації текстової авторизації</h2>
+        <p>Скрипт запитує логін та пароль (без відображення символів), після чого звіряє їх із тестовими даними та виводить відповідний статус доступу:</p>
+
+<pre><code>#!/usr/bin/env bash
+
+# Дані для перевірки
+VALID_USER="admin"
+VALID_PASS="SuperSecret123"
+
+echo "========================================"
+echo "    GNU/Linux Terminal Login System     "
+echo "========================================"
+
+# Запит імені користувача
+read -p "login: " username
+
+# Запит пароля без відображення символів у терміналі (-s)
+read -sp "Password: " password
+echo ""
+
+# Перевірка введених даних
+if [[ "$username" == "$VALID_USER" && "$password" == "$VALID_PASS" ]]; then
+    echo "----------------------------------------"
+    echo "Автентифікація успішна! Вітаємо, $username."
+    echo "Останній вхід: $(date)"
+    echo "Термінал активовано: /bin/bash"
+    echo "----------------------------------------"
+    exit 0
+else
+    echo "----------------------------------------"
+    echo "Login incorrect. Доступ заборонено!"
+    echo "----------------------------------------"
+    exit 1
+fi
+</code></pre>
+    </section>
+
+    <!-- 5. Джерела інформації -->
+    <section>
+        <h2>5. Джерела інформації</h2>
+        <ul>
+            <li><a href="https://www.kernel.org" target="_blank" rel="noopener">The Linux Kernel Archives</a> — Офіційне джерело коду та документації ядра Linux.</li>
+            <li><a href="https://www.gnu.org" target="_blank" rel="noopener">GNU Operating System</a> — Філософія вільного програмного забезпечення та документація утиліт GNU.</li>
+            <li><a href="https://wiki.archlinux.org" target="_blank" rel="noopener">ArchWiki</a> — Одна з найповніших енциклопедій з адміністрування та налаштування Linux.</li>
+            <li><a href="https://linuxjourney.com" target="_blank" rel="noopener">Linux Journey</a> — Інтерактивний підручник з вивчення Linux від базового рівня до системного адміністрування.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; Практична робота з курсу операційних систем та системного програмування</p>
+    </footer>
+</div>
+
+</body>
+</html>
